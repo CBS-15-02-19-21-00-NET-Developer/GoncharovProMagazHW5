@@ -6,14 +6,54 @@ using System.Threading.Tasks;
 
 namespace Trading
 {
+
     class Article
     {
         private string productName;
-        public string ProductName { set; get; }
+
         private string outletName;
-        public string OutletName { set; get; }
-        private decimal price;
-        public decimal Price { set; get; }
+
+        private decimal price = 100m;
+        public string ProductName
+        {
+            set
+            {
+                productName = value;
+            }
+            get
+            {
+                return productName;
+            }
+        }
+        public Article()
+        {
+        }
+        public string OutletName
+        {
+            set
+            {
+                outletName = value;
+            }
+            get
+            {
+                return outletName;
+            }
+        }
+        public decimal Price
+        {
+            set
+            {
+                price = value
+                    ;
+            }
+            get
+            {
+                return price;
+            }
+        }
+
+
+
 
         public void Show()
         {
@@ -21,5 +61,7 @@ namespace Trading
             Console.Write(OutletName + "\t|");
             Console.Write(Price);
         }
+
     }
 }
+

@@ -8,7 +8,11 @@ namespace Trading
         {
 
             Store magaz = new Store();
+
             magaz.StoreList();
+            magaz.SearchProductByName();
+            magaz.SearchProductByIndex();
+
 
 
             Console.ReadKey();
