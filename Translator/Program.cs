@@ -34,7 +34,7 @@ namespace Translator
             Console.WriteLine(dictionary["стол"]);
             Console.WriteLine(dictionary["карандаш"]);
             Console.WriteLine(dictionary["яблоко"]);
-            Console.WriteLine(dictionary["солнце"]);
+            Console.WriteLine(dictionary["солнце"]); 
 
             Console.WriteLine(new string('-', 20));
 
